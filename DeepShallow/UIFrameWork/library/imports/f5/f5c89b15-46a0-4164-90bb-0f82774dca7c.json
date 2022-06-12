@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "renqi01",
+    "texture": "ce86c384-90d8-41d7-a6a7-e0a6808239a2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      369,
+      202
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      369,
+      202
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

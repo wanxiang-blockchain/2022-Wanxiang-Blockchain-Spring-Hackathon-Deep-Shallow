@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "upgrade_down",
+    "texture": "5dce26f4-1246-4b15-ac6f-4d11bc775f70",
+    "atlas": "",
+    "rect": [
+      7,
+      0,
+      94,
+      85
+    ],
+    "offset": [
+      0,
+      2.5
+    ],
+    "originalSize": [
+      108,
+      90
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

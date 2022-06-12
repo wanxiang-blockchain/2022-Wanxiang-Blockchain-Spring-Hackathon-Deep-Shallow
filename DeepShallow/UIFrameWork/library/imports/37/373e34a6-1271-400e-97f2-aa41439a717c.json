@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "jianzaokuangding01",
+    "texture": "39516e49-6bcb-4ba1-9dae-49e670a9794c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      311,
+      125
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      311,
+      125
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

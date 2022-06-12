@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "become-observed.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { IComputedValue, IObservable, IObservableArray, Lambda, ObservableMap, ObservableSet, IObservableValue } from \"../mobx\";\r\nexport declare function onBecomeObserved(value: IObservable | IComputedValue<any> | IObservableArray<any> | ObservableMap<any, any> | ObservableSet<any> | IObservableValue<any>, listener: Lambda): Lambda;\r\nexport declare function onBecomeObserved<K, V = any>(value: ObservableMap<K, V> | Object, property: K, listener: Lambda): Lambda;\r\nexport declare function onBecomeUnobserved(value: IObservable | IComputedValue<any> | IObservableArray<any> | ObservableMap<any, any> | ObservableSet<any> | IObservableValue<any>, listener: Lambda): Lambda;\r\nexport declare function onBecomeUnobserved<K, V = any>(value: ObservableMap<K, V> | Object, property: K, listener: Lambda): Lambda;\r\n"
+}

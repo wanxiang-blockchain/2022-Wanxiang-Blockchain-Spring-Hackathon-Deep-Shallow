@@ -1,0 +1,78 @@
+"use strict";
+cc._RF.push(module, '64d76l/v4JPK6JM5Y8OH42G', 'UINavigator');
+// Script/UIScript/UINavigator.ts
+
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var FormMgr_1 = require("../UIFrame/FormMgr");
+var UIForm_1 = require("../UIFrame/UIForm");
+var UIConfig_1 = require("./../UIConfig");
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+var UINavigator = /** @class */ (function (_super) {
+    __extends(UINavigator, _super);
+    function UINavigator() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    UINavigator.prototype.start = function () {
+        var content = this.view.Scroll.content;
+        for (var _i = 0, _a = content.children; _i < _a.length; _i++) {
+            var e = _a[_i];
+            e.on(cc.Node.EventType.TOUCH_END, this.onClickButton, this);
+        }
+    };
+    UINavigator.prototype.onClickButton = function (e) {
+        var node = e.getCurrentTarget();
+        switch (node.name) {
+            case "project":
+                FormMgr_1.default.open(UIConfig_1.default.UIHome);
+                break;
+            case "light":
+                FormMgr_1.default.open(UIConfig_1.default.UILight);
+                break;
+            case "capture":
+                FormMgr_1.default.open(UIConfig_1.default.UICapture);
+                break;
+            case "mobx":
+                FormMgr_1.default.open(UIConfig_1.default.UIMobx);
+                break;
+            case "dungeon":
+                FormMgr_1.default.open(UIConfig_1.default.UIDungeon);
+                break;
+            case "splitTexture":
+                FormMgr_1.default.open(UIConfig_1.default.UISplitTexture);
+                break;
+            case "scrollTexture":
+                FormMgr_1.default.open(UIConfig_1.default.UIScrollTexture);
+                break;
+            case "meshTexture":
+                FormMgr_1.default.open(UIConfig_1.default.UIMeshTexture);
+                break;
+        }
+    };
+    UINavigator = __decorate([
+        ccclass
+    ], UINavigator);
+    return UINavigator;
+}(UIForm_1.UIScreen));
+exports.default = UINavigator;
+
+cc._RF.pop();

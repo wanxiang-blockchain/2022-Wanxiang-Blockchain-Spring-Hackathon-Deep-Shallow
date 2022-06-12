@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "makeObservable.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { AnnotationsMap, CreateObservableOptions } from \"../mobx\";\r\ndeclare type NoInfer<T> = [T][T extends any ? 0 : never];\r\nexport declare function makeObservable<T extends object, AdditionalKeys extends PropertyKey = never>(target: T, annotations?: AnnotationsMap<T, NoInfer<AdditionalKeys>>, options?: CreateObservableOptions): T;\r\nexport declare function makeAutoObservable<T extends object, AdditionalKeys extends PropertyKey = never>(target: T, overrides?: AnnotationsMap<T, NoInfer<AdditionalKeys>>, options?: CreateObservableOptions): T;\r\nexport {};\r\n"
+}

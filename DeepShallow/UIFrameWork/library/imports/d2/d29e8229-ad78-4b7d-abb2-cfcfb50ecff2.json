@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "万",
+    "texture": "ef0e4235-3339-493a-8d9c-107d5d3e93db",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      21,
+      19
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      21,
+      19
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

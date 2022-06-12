@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "annotation.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { ObservableObjectAdministration } from \"../mobx\";\r\nexport declare const enum MakeResult {\r\n    Cancel = 0,\r\n    Break = 1,\r\n    Continue = 2\r\n}\r\nexport declare type Annotation = {\r\n    annotationType_: string;\r\n    make_(adm: ObservableObjectAdministration, key: PropertyKey, descriptor: PropertyDescriptor, source: object): MakeResult;\r\n    extend_(adm: ObservableObjectAdministration, key: PropertyKey, descriptor: PropertyDescriptor, proxyTrap: boolean): boolean | null;\r\n    options_?: any;\r\n};\r\nexport declare type AnnotationMapEntry = Annotation | true | false;\r\nexport declare type AnnotationsMap<T, AdditionalFields extends PropertyKey> = {\r\n    [P in Exclude<keyof T, \"toString\">]?: AnnotationMapEntry;\r\n} & Record<AdditionalFields, AnnotationMapEntry>;\r\nexport declare function isAnnotation(thing: any): boolean;\r\nexport declare function isAnnotationMapEntry(thing: any): boolean;\r\n"
+}

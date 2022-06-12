@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "flow.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { Annotation } from \"../mobx\";\r\nexport declare const FLOW = \"flow\";\r\nexport declare function FlowCancellationError(): void;\r\nexport declare namespace FlowCancellationError {\r\n    var prototype: any;\r\n}\r\nexport declare function isFlowCancellationError(error: Error): boolean;\r\nexport declare type CancellablePromise<T> = Promise<T> & {\r\n    cancel(): void;\r\n};\r\ninterface Flow extends Annotation, PropertyDecorator {\r\n    <R, Args extends any[]>(generator: (...args: Args) => Generator<any, R, any> | AsyncGenerator<any, R, any>): (...args: Args) => CancellablePromise<R>;\r\n    bound: Annotation & PropertyDecorator;\r\n}\r\nexport declare const flow: Flow;\r\nexport declare function flowResult<T>(result: T): T extends Generator<any, infer R, any> ? CancellablePromise<R> : T extends CancellablePromise<any> ? T : never;\r\nexport declare function isFlow(fn: any): boolean;\r\nexport {};\r\n"
+}

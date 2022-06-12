@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "dynamicobject.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { IIsObservableObject, CreateObservableOptions } from \"../mobx\";\r\nexport declare function asDynamicObservableObject(target: any, options?: CreateObservableOptions): IIsObservableObject;\r\n"
+}

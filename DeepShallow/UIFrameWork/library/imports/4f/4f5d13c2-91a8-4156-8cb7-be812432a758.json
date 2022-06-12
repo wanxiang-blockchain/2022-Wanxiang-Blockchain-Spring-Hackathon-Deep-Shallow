@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "flowannotation.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { Annotation } from \"../mobx\";\r\nexport declare function createFlowAnnotation(name: string, options?: object): Annotation;\r\n"
+}

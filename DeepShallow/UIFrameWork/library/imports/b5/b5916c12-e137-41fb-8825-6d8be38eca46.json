@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "intercept-utils.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { Lambda } from \"../mobx\";\r\nexport declare type IInterceptor<T> = (change: T) => T | null;\r\nexport interface IInterceptable<T> {\r\n    interceptors_: IInterceptor<T>[] | undefined;\r\n}\r\nexport declare function hasInterceptors(interceptable: IInterceptable<any>): boolean;\r\nexport declare function registerInterceptor<T>(interceptable: IInterceptable<T>, handler: IInterceptor<T>): Lambda;\r\nexport declare function interceptChange<T>(interceptable: IInterceptable<T | null>, change: T | null): T | null;\r\n"
+}

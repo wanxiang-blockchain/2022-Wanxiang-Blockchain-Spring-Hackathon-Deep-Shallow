@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "decorators.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { Annotation, AnnotationsMap } from \"../mobx\";\r\nexport declare const storedAnnotationsSymbol: unique symbol;\r\n/**\r\n * Creates a function that acts as\r\n * - decorator\r\n * - annotation object\r\n */\r\nexport declare function createDecoratorAnnotation(annotation: Annotation): PropertyDecorator & Annotation;\r\n/**\r\n * Stores annotation to prototype,\r\n * so it can be inspected later by `makeObservable` called from constructor\r\n */\r\nexport declare function storeAnnotation(prototype: any, key: PropertyKey, annotation: Annotation): void;\r\n/**\r\n * Collects annotations from prototypes and stores them on target (instance)\r\n */\r\nexport declare function collectStoredAnnotations(target: any): AnnotationsMap<any, any>;\r\n"
+}

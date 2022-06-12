@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "computedannotation.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { Annotation } from \"../mobx\";\r\nexport declare function createComputedAnnotation(name: string, options?: object): Annotation;\r\n"
+}

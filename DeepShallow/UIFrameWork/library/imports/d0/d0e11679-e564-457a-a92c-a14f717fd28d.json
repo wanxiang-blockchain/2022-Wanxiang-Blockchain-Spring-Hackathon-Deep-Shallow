@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "extendobservable.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { CreateObservableOptions, AnnotationsMap } from \"../mobx\";\r\nexport declare function extendObservable<A extends Object, B extends Object>(target: A, properties: B, annotations?: AnnotationsMap<B, never>, options?: CreateObservableOptions): A & B;\r\n"
+}

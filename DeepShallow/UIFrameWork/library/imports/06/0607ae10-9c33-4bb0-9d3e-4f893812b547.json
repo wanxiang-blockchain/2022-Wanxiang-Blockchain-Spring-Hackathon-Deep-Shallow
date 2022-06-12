@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "autoannotation.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { Annotation } from \"../mobx\";\r\nexport declare const autoAnnotation: Annotation;\r\nexport declare function createAutoAnnotation(options?: object): Annotation;\r\n"
+}

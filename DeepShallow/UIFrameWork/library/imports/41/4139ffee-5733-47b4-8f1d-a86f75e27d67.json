@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "modifiers.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "export interface IEnhancer<T> {\r\n    (newValue: T, oldValue: T | undefined, name: string): T;\r\n}\r\nexport declare function deepEnhancer(v: any, _: any, name: any): any;\r\nexport declare function shallowEnhancer(v: any, _: any, name: any): any;\r\nexport declare function referenceEnhancer(newValue?: any): any;\r\nexport declare function refStructEnhancer(v: any, oldValue: any): any;\r\n"
+}

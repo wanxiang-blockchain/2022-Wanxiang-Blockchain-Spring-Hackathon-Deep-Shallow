@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "comparer.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "export interface IEqualsComparer<T> {\r\n    (a: T, b: T): boolean;\r\n}\r\ndeclare function identityComparer(a: any, b: any): boolean;\r\ndeclare function structuralComparer(a: any, b: any): boolean;\r\ndeclare function shallowComparer(a: any, b: any): boolean;\r\ndeclare function defaultComparer(a: any, b: any): boolean;\r\nexport declare const comparer: {\r\n    identity: typeof identityComparer;\r\n    structural: typeof structuralComparer;\r\n    default: typeof defaultComparer;\r\n    shallow: typeof shallowComparer;\r\n};\r\nexport {};\r\n"
+}

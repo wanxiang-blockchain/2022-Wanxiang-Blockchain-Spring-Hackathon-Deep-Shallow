@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "spy.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { IComputedDidChange } from \"./computedvalue\";\r\nimport { IValueDidChange, IBoxDidChange } from \"./../types/observablevalue\";\r\nimport { IObjectDidChange } from \"./../types/observableobject\";\r\nimport { IArrayDidChange } from \"./../types/observablearray\";\r\nimport { Lambda, ISetDidChange, IMapDidChange } from \"../mobx\";\r\nexport declare function isSpyEnabled(): boolean;\r\nexport declare type PureSpyEvent = {\r\n    type: \"action\";\r\n    name: string;\r\n    object: unknown;\r\n    arguments: unknown[];\r\n} | {\r\n    type: \"scheduled-reaction\";\r\n    name: string;\r\n} | {\r\n    type: \"reaction\";\r\n    name: string;\r\n} | {\r\n    type: \"error\";\r\n    name: string;\r\n    message: string;\r\n    error: string;\r\n} | IComputedDidChange<unknown> | IObjectDidChange<unknown> | IArrayDidChange<unknown> | IMapDidChange<unknown, unknown> | ISetDidChange<unknown> | IValueDidChange<unknown> | IBoxDidChange<unknown> | {\r\n    type: \"report-end\";\r\n    spyReportEnd: true;\r\n    time?: number;\r\n};\r\ndeclare type SpyEvent = PureSpyEvent & {\r\n    spyReportStart?: true;\r\n};\r\nexport declare function spyReport(event: SpyEvent): void;\r\nexport declare function spyReportStart(event: PureSpyEvent): void;\r\nexport declare function spyReportEnd(change?: {\r\n    time?: number;\r\n}): void;\r\nexport declare function spy(listener: (change: SpyEvent) => void): Lambda;\r\nexport {};\r\n"
+}

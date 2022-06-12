@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "listen-utils.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { Lambda } from \"../mobx\";\r\nexport interface IListenable {\r\n    changeListeners_: Function[] | undefined;\r\n}\r\nexport declare function hasListeners(listenable: IListenable): boolean;\r\nexport declare function registerListener(listenable: IListenable, handler: Function): Lambda;\r\nexport declare function notifyListeners<T>(listenable: IListenable, change: T): void;\r\n"
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "encyclopedia_down",
+    "texture": "992518e3-6f73-44e0-90da-45619a1c5151",
+    "atlas": "",
+    "rect": [
+      8,
+      2,
+      108,
+      83
+    ],
+    "offset": [
+      -1,
+      1.5
+    ],
+    "originalSize": [
+      126,
+      90
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

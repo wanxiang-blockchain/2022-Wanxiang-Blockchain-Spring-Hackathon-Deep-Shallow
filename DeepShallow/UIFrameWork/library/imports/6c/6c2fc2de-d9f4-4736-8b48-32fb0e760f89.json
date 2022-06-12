@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "action.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { IDerivation } from \"../mobx\";\r\nexport declare function createAction(actionName: string, fn: Function, autoAction?: boolean, ref?: Object): Function;\r\nexport declare function executeAction(actionName: string, canRunAsDerivation: boolean, fn: Function, scope?: any, args?: IArguments): any;\r\nexport interface IActionRunInfo {\r\n    prevDerivation_: IDerivation | null;\r\n    prevAllowStateChanges_: boolean;\r\n    prevAllowStateReads_: boolean;\r\n    notifySpy_: boolean;\r\n    startTime_: number;\r\n    error_?: any;\r\n    parentActionId_: number;\r\n    actionId_: number;\r\n    runAsAction_?: boolean;\r\n}\r\nexport declare function _startAction(actionName: string, canRunAsDerivation: boolean, // true for autoAction\r\nscope: any, args?: IArguments): IActionRunInfo;\r\nexport declare function _endAction(runInfo: IActionRunInfo): void;\r\nexport declare function allowStateChanges<T>(allowStateChanges: boolean, func: () => T): T;\r\nexport declare function allowStateChangesStart(allowStateChanges: boolean): boolean;\r\nexport declare function allowStateChangesEnd(prev: boolean): void;\r\n"
+}

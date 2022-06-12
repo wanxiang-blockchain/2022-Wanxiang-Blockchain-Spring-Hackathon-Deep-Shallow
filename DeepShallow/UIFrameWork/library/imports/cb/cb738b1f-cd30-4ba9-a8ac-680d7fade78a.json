@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "isobservable.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "export declare function isObservable(value: any): boolean;\r\nexport declare function isObservableProp(value: any, propName: PropertyKey): boolean;\r\n"
+}

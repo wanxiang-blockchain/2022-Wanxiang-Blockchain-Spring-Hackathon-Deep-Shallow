@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "action.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { Annotation } from \"../mobx\";\r\nexport declare const ACTION = \"action\";\r\nexport declare const ACTION_BOUND = \"action.bound\";\r\nexport declare const AUTOACTION = \"autoAction\";\r\nexport declare const AUTOACTION_BOUND = \"autoAction.bound\";\r\nexport interface IActionFactory extends Annotation, PropertyDecorator {\r\n    <T extends Function | undefined | null>(fn: T): T;\r\n    <T extends Function | undefined | null>(name: string, fn: T): T;\r\n    (customName: string): PropertyDecorator & Annotation;\r\n    bound: Annotation & PropertyDecorator;\r\n}\r\nexport declare const action: IActionFactory;\r\nexport declare const autoAction: IActionFactory;\r\nexport declare function runInAction<T>(fn: () => T): T;\r\nexport declare function isAction(thing: any): boolean;\r\n"
+}

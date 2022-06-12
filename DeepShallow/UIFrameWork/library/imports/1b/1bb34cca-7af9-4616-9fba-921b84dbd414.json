@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "jianzhu08",
+    "texture": "bd618759-0492-4ea6-898a-fc4b5d462fbb",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      173,
+      165
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      173,
+      165
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

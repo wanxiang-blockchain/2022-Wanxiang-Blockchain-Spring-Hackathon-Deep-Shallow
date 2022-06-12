@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "configure.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "export declare function configure(options: {\r\n    enforceActions?: \"never\" | \"always\" | \"observed\";\r\n    computedRequiresReaction?: boolean;\r\n    /**\r\n     * Warn if you try to create to derivation / reactive context without accessing any observable.\r\n     */\r\n    reactionRequiresObservable?: boolean;\r\n    /**\r\n     * Warn if observables are accessed outside a reactive context\r\n     */\r\n    observableRequiresReaction?: boolean;\r\n    isolateGlobalState?: boolean;\r\n    disableErrorBoundaries?: boolean;\r\n    safeDescriptors?: boolean;\r\n    reactionScheduler?: (f: () => void) => void;\r\n    useProxies?: \"always\" | \"never\" | \"ifavailable\";\r\n}): void;\r\n"
+}

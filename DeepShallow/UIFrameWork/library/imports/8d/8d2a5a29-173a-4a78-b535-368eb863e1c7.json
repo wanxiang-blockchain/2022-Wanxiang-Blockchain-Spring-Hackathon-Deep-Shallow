@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "eq.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "export declare function deepEqual(a: any, b: any, depth?: number): boolean;\r\n"
+}

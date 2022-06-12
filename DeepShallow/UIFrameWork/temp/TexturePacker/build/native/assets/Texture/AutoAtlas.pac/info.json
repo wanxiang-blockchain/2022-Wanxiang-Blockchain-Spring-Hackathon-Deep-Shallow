@@ -1,0 +1,85 @@
+{
+  "projectPath": "/Users/dahai/Desktop/work/bs/UIFrameWork",
+  "actualPlatform": "web-mobile",
+  "mtimes": {
+    "9ffda22a-ac26-43c1-b3d6-3dff47a90b92": {
+      "assetMtime": 1654982953106,
+      "metaMtime": 1654982987214
+    },
+    "32d5f98a-9ba2-4ce4-ac0e-700ba67894e6": {
+      "assetMtime": 1653723303000,
+      "metaMtime": 1654948920029
+    },
+    "0402165d-b852-4014-ae66-1be98220fd61": {
+      "assetMtime": 1653723303000,
+      "metaMtime": 1654948920029
+    }
+  },
+  "result": {
+    "name": "AutoAtlas",
+    "width": 2048,
+    "height": 2048,
+    "ver": "1.2.5",
+    "uuid": "9ffda22a-ac26-43c1-b3d6-3dff47a90b92",
+    "importer": "auto-atlas",
+    "maxWidth": 2048,
+    "maxHeight": 2048,
+    "padding": 2,
+    "compressionLevel": 6,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": true,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "home_page",
+            "uuid": "32d5f98a-9ba2-4ce4-ac0e-700ba67894e6",
+            "textureUuid": "0402165d-b852-4014-ae66-1be98220fd61",
+            "path": "/Users/dahai/Desktop/work/bs/UIFrameWork/temp/trimImages/spritesheet_js_1654983011505_image_0.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 700,
+              "height": 600,
+              "rotatedWidth": 700,
+              "rotatedHeight": 600
+            },
+            "rawWidth": 700,
+            "rawHeight": 600,
+            "width": 706,
+            "height": 606,
+            "originalPath": "/Users/dahai/Desktop/work/bs/UIFrameWork/library/imports/04/0402165d-b852-4014-ae66-1be98220fd61.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 706,
+            "rotatedHeight": 606
+          }
+        ],
+        "width": 706,
+        "height": 606,
+        "name": "AutoAtlas-1",
+        "imagePath": "/Users/dahai/Desktop/work/bs/UIFrameWork/temp/TexturePacker/build/native/assets/Texture/AutoAtlas.pac/AutoAtlas-1.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "/Users/dahai/Desktop/work/bs/UIFrameWork/temp/TexturePacker/build/native/assets/Texture/AutoAtlas.pac/compressed/AutoAtlas-1"
+        }
+      }
+    ],
+    "unpackedTextures": []
+  }
+}

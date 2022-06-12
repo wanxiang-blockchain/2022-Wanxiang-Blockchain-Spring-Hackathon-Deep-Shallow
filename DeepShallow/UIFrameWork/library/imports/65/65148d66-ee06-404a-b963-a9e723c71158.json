@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "trace.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "export declare function trace(thing?: any, prop?: string, enterBreakPoint?: boolean): void;\r\nexport declare function trace(thing?: any, enterBreakPoint?: boolean): void;\r\nexport declare function trace(enterBreakPoint?: boolean): void;\r\n"
+}

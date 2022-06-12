@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "legacyobservablearray.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { IEnhancer, IObservableArray } from \"../mobx\";\r\nexport declare function reserveArrayBuffer(max: number): void;\r\nexport declare function createLegacyArray<T>(initialValues: T[] | undefined, enhancer: IEnhancer<T>, name?: string): IObservableArray<T>;\r\n"
+}

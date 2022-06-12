@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "actionannotation.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { ObservableObjectAdministration, Annotation } from \"../mobx\";\r\nexport declare function createActionAnnotation(name: string, options?: object): Annotation;\r\nexport declare function createActionDescriptor(adm: ObservableObjectAdministration, annotation: Annotation, key: PropertyKey, descriptor: PropertyDescriptor, safeDescriptors?: boolean): {\r\n    value: Function;\r\n    configurable: boolean;\r\n    enumerable: boolean;\r\n    writable: boolean;\r\n};\r\n"
+}

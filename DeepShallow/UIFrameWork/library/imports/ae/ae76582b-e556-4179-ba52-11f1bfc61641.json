@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "type-utils.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { IDepTreeNode } from \"../mobx\";\r\nexport declare function getAtom(thing: any, property?: PropertyKey): IDepTreeNode;\r\nexport declare function getAdministration(thing: any, property?: string): any;\r\nexport declare function getDebugName(thing: any, property?: string): string;\r\n"
+}

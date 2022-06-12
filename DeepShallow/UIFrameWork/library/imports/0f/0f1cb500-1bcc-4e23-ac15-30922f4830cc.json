@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "extras.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "export interface IDependencyTree {\r\n    name: string;\r\n    dependencies?: IDependencyTree[];\r\n}\r\nexport interface IObserverTree {\r\n    name: string;\r\n    observers?: IObserverTree[];\r\n}\r\nexport declare function getDependencyTree(thing: any, property?: string): IDependencyTree;\r\nexport declare function getObserverTree(thing: any, property?: string): IObserverTree;\r\n"
+}

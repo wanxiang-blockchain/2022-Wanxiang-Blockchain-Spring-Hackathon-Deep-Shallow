@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "intercept-read.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { IObservableArray, IObservableValue, Lambda, ObservableMap, ObservableSet } from \"../mobx\";\r\nexport declare type ReadInterceptor<T> = (value: any) => T;\r\n/** Experimental feature right now, tested indirectly via Mobx-State-Tree */\r\nexport declare function interceptReads<T>(value: IObservableValue<T>, handler: ReadInterceptor<T>): Lambda;\r\nexport declare function interceptReads<T>(observableArray: IObservableArray<T>, handler: ReadInterceptor<T>): Lambda;\r\nexport declare function interceptReads<K, V>(observableMap: ObservableMap<K, V>, handler: ReadInterceptor<V>): Lambda;\r\nexport declare function interceptReads<V>(observableSet: ObservableSet<V>, handler: ReadInterceptor<V>): Lambda;\r\nexport declare function interceptReads(object: Object, property: string, handler: ReadInterceptor<any>): Lambda;\r\n"
+}

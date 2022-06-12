@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "overrideannotation.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { Annotation } from \"../mobx\";\r\nexport declare const override: Annotation & PropertyDecorator;\r\nexport declare function isOverride(annotation: Annotation): boolean;\r\n"
+}

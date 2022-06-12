@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "tojs.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "/**\r\n * Basically, a deep clone, so that no reactive property will exist anymore.\r\n */\r\nexport declare function toJS<T>(source: T, options?: any): T;\r\n"
+}

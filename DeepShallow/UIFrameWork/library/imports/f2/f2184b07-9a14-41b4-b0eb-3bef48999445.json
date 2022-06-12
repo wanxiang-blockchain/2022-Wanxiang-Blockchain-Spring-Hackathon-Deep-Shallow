@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "when.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "import { IReactionDisposer, Lambda } from \"../mobx\";\r\nexport interface IWhenOptions {\r\n    name?: string;\r\n    timeout?: number;\r\n    onError?: (error: any) => void;\r\n}\r\nexport declare function when(predicate: () => boolean, opts?: IWhenOptions): Promise<void> & {\r\n    cancel(): void;\r\n};\r\nexport declare function when(predicate: () => boolean, effect: Lambda, opts?: IWhenOptions): IReactionDisposer;\r\n"
+}

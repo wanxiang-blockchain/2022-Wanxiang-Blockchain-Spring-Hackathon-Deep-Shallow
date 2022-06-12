@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/Script/UIFrame/config/SysConfig.ts"],"names":[],"mappings":";;;;;;;AAAA;IAAA;IAGA,CAAC;IAFU,qBAAW,GAAG,KAAK,CAAC;IAE/B,gBAAC;CAHD,AAGC,IAAA;AAHY,8BAAS","file":"","sourceRoot":"/","sourcesContent":["export class SysConfig {\n    static useLRUCache = false;\n    \n}"]}

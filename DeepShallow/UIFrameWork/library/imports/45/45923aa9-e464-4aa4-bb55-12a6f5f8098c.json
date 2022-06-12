@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "iterable.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "export declare function makeIterable<T>(iterator: Iterator<T>): IterableIterator<T>;\r\n"
+}

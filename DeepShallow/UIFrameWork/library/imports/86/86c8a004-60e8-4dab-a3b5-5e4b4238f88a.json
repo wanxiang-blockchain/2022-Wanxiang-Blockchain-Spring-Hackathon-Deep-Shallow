@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "iscomputed.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "export declare function _isComputed(value: any, property?: PropertyKey): boolean;\r\nexport declare function isComputed(value: any): boolean;\r\nexport declare function isComputedProp(value: any, propName: PropertyKey): boolean;\r\n"
+}

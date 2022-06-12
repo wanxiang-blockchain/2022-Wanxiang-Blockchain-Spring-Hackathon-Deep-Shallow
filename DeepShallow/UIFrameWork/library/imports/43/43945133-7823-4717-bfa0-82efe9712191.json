@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "nianyueri",
+    "texture": "af7cfa3a-867a-4e14-8b39-5a4a702ba77c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      593,
+      119
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      593,
+      119
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
